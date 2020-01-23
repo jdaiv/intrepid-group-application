@@ -5,6 +5,8 @@ require_once __DIR__.'/vendor/autoload.php';
 
 // Fetch the collection of books
 $bookRepository = new StaticBookRepository();
+// I'd probably do this filter somewhere else, and this makes some _big_
+// assumptions by placing it here. But it's visible and easily changed.
 $books = $bookRepository->fetchAllLanguageEN();
 
 // Render the homepage

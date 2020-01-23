@@ -10,4 +10,5 @@ namespace IntrepidGroup\SampleApplication\Repository;
 interface BookRepositoryInterface
 {
     public function fetchAll();
+    public function fetchAllLanguageEN();
 }
