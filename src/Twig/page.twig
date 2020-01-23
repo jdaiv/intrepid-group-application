@@ -1,13 +1,30 @@
 <main class="container" id="app">
     <h2>Book Catalogue</h2>
 
+    <div class="filters">
+        <h3 class="filters__header">Filter By</h3>
+        <div class="filters__item">
+            <label>
+                Rating:
+                <select v-on:change="filterRating">
+                    <option value="all">All</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
+        </div>
+    </div>
+
     <table class="table table--bordered">
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Author</th>
                 <th>Category</th>
-                <th>Year 🔽</th>
+                <th class="table__header--sortable" v-on:click="sort('year')">Year {{ sortDesc ? '🔽' : '🔼' }}</th>
                 <th>Rating</th>
             </tr>
         </thead>

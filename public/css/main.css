@@ -61,6 +61,22 @@ td {
 }
 
 
+/* FILTERS */
+
+.filters {
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc;
+    padding: 1rem;
+}
+
+.filters__header {
+    margin-top: 0;
+}
+
+.filters__item {
+}
+
+
 /* TABLE */
 
 .table {
@@ -69,4 +85,8 @@ td {
 
 .table--bordered {
     border: 1px solid #cccccc;
+}
+
+.table__header--sortable {
+    cursor: pointer;
 }
