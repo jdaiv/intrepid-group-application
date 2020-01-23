@@ -3,7 +3,7 @@
 
     <div class="filters">
         <h3 class="filters__header">Filter By</h3>
-        <div class="filters__item">
+        <div>
             <label>
                 Rating:
                 <select v-on:change="filterRating">
@@ -22,10 +22,10 @@
         <thead>
             <tr>
                 <th>Title</th>
-                <th>Author</th>
-                <th>Category</th>
+                <th class="table__row--hide-mobile">Author</th>
+                <th class="table__row--hide-mobile">Category</th>
                 <th class="table__header--sortable" v-on:click="sort('year')">Year {{ sortDesc ? '🔽' : '🔼' }}</th>
-                <th>Rating</th>
+                <th class="table__row--hide-mobile">Rating</th>
             </tr>
         </thead>
         <tbody>
@@ -34,10 +34,10 @@
                 v-bind:class="{ 'table__row--highlight': book.year >= 1950 }"
                 >
                 <td>{{ book.title }}</td>
-                <td>{{ book.author }}</td>
-                <td>{{ book.category }}</td>
+                <td class="table__row--hide-mobile">{{ book.author }}</td>
+                <td class="table__row--hide-mobile">{{ book.category }}</td>
                 <td>{{ book.year }}</td>
-                <td>{{ book.rating }}</td>
+                <td class="table__row--hide-mobile">{{ book.rating }}</td>
             </tr>
         </tbody>
     </table>
