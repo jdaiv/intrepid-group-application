@@ -36,6 +36,25 @@ class StaticBookRepository implements BookRepositoryInterface
     }
 
     /**
+     * Retrieve and return a collection of all english books.
+     *
+     * @return Book[]
+     */
+    public function fetchAllLanguageEN()
+    {
+        $output = [];
+
+        /* @var $book Book */
+        foreach ($this->books as $book) {
+            if (strtolower($book->getLanguage()) == 'english') {
+                $output[] = $book->toArray();
+            }
+        }
+
+        return $output;
+    }
+
+    /**
      * Preload the static list of books.
      */
     private function preloadStaticBooks()

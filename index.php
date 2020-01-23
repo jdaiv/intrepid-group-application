@@ -5,7 +5,7 @@ require_once __DIR__.'/vendor/autoload.php';
 
 // Fetch the collection of books
 $bookRepository = new StaticBookRepository();
-$books = $bookRepository->fetchAll();
+$books = $bookRepository->fetchAllLanguageEN();
 
 // Render the homepage
 $twig = new Twig_Environment(new Twig_Loader_Filesystem(__DIR__.'/src/Twig'));
