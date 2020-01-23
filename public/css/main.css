@@ -90,3 +90,7 @@ td {
 .table__header--sortable {
     cursor: pointer;
 }
+
+.table__row--highlight {
+    background: lightyellow;
+}

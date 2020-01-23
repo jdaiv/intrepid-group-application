@@ -29,7 +29,10 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="(book, index) in sortedBooks" :key="index">
+            <tr
+                v-for="(book, index) in sortedBooks" :key="index"
+                v-bind:class="{ 'table__row--highlight': book.year >= 1950 }"
+                >
                 <td>{{ book.title }}</td>
                 <td>{{ book.author }}</td>
                 <td>{{ book.category }}</td>
