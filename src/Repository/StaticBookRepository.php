@@ -65,7 +65,7 @@ class StaticBookRepository implements BookRepositoryInterface
             'English',
             1941,
             3,
-            'Childrens');
+            'Travel');
         $this->books[] = new Book(
             'Don Quixote',
             'Miguel De Cervantes',
@@ -93,7 +93,7 @@ class StaticBookRepository implements BookRepositoryInterface
             'English',
             1684,
             4,
-            'Childrens');
+            'History');
         $this->books[] = new Book(
             'In Search of Lost Time',
             'Marcel Proust',
@@ -107,7 +107,7 @@ class StaticBookRepository implements BookRepositoryInterface
             'English',
             1962,
             4,
-            'Romance');
+            'History');
         $this->books[] = new Book(
             'The Trial',
             'Franz Kafka',
@@ -149,7 +149,7 @@ class StaticBookRepository implements BookRepositoryInterface
             'English',
             1973,
             2,
-            'Childrens');
+            'Travel');
         $this->books[] = new Book(
             'One Hundred Years of Solitude',
             'Gabriel García Márquez',
