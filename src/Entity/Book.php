@@ -14,14 +14,16 @@ class Book
     private $language = '';
     private $year = 1970;
     private $rating = 0;
+    private $category = '';
 
-    public function __construct($title, $author, $language, $year, $rating)
+    public function __construct($title, $author, $language, $year, $rating, $category)
     {
         $this->title = $title;
         $this->author = $author;
         $this->language = $language;
         $this->year = $year;
         $this->rating = $rating;
+        $this->category = $category;
     }
 
     /**
@@ -65,6 +67,14 @@ class Book
     }
 
     /**
+     * @return string
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
      * @return array
      */
     public function toArray()
@@ -75,6 +85,7 @@ class Book
             'language' => $this->getLanguage(),
             'rating' => $this->getRating(),
             'year' => $this->getYear(),
+            'category' => $this->getCategory(),
         ];
     }
 }

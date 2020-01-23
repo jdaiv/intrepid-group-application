@@ -6,6 +6,7 @@
             <tr>
                 <th>Title</th>
                 <th>Author</th>
+                <th>Category</th>
                 <th>Year</th>
                 <th>Rating</th>
                 <th>Language</th>
@@ -15,6 +16,7 @@
             <tr v-for="(book, index) in books" :key="index">
                 <td>{{ book.title }}</td>
                 <td>{{ book.author }}</td>
+                <td>{{ book.category }}</td>
                 <td>{{ book.year }}</td>
                 <td>{{ book.rating }}</td>
                 <td>{{ book.language }}</td>
