@@ -7,12 +7,12 @@
                 <th>Title</th>
                 <th>Author</th>
                 <th>Category</th>
-                <th>Year</th>
+                <th>Year 🔽</th>
                 <th>Rating</th>
             </tr>
         </thead>
         <tbody>
-            <tr v-for="(book, index) in books" :key="index">
+            <tr v-for="(book, index) in sortedBooks" :key="index">
                 <td>{{ book.title }}</td>
                 <td>{{ book.author }}</td>
                 <td>{{ book.category }}</td>
