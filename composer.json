@@ -1,0 +1,18 @@
+{
+    "name": "intrepid-group/sample-application",
+    "description": "Sample Application for applications with the Intrepid Group",
+    "authors": [
+        {
+            "name": "Matthew Wheeler",
+            "email": "matthew.wheeler@intrepidtravel.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "IntrepidGroup\\SampleApplication\\": "src"
+        }
+    },
+    "require": {
+        "twig/twig": "^2.12"
+    }
+}
